@@ -13,7 +13,8 @@ ANT_HOME=$LOCAL/ant
 echo "in INSTALL FILE PWD:$PWD"
 
 AXIS_FILE=axis2-1.6.2-war.zip
-JDK_FILE=jdk-7u51-linux-x64.tar.gz
+#JDK_FILE=jdk-7u51-linux-x64.tar.gz
+JDK_FILE=jdk-8u92-linux-x64.tar.gz
 ANT_FILE=apache-ant-1.9.6-bin.tar.bz2
 JBOSS_FILE=jboss-as-7.1.1.Final.tar.gz
 
