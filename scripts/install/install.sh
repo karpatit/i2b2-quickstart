@@ -90,7 +90,8 @@ install_java(){
 	then echo "FOUND $JDK_FILE"
 	else
 	#wget --no-cookies --header "Cookie: oraclelicense=accept-securebackup-cookie" http://download.oracle.com/otn-pub/java/jdk/8u60-b27/jdk-8u60-linux-x64.tar.gz
-	wget https://www.dropbox.com/s/n13h7lmhn3bzy7b/jdk-8u92-linux-x64.tar.gz
+	#wget https://www.dropbox.com/s/n13h7lmhn3bzy7b/jdk-8u92-linux-x64.tar.gz
+	wget https://devops.egov.org.in/Downloads/jdk/jdk-8u92-linux-x64.tar.gz
 
 	0
 	#tar -xzf jdk-8u60-linux-x64.tar.gz
@@ -113,7 +114,8 @@ install_ant(){
 	then echo "Found $ANT_FILE"
 	else
 		#wget http://archive.apache.org/dist/ant/binaries/$ANT_FILE
-		wget https://www.dropbox.com/s/nbt6y9t139m8nhk/apache-ant-1.9.6-bin.tar.bz2
+		#wget https://www.dropbox.com/s/nbt6y9t139m8nhk/apache-ant-1.9.6-bin.tar.bz2
+		wget https://dlcdn.apache.org//ant/binaries/apache-ant-1.9.16-bin.tar.bz2
 	fi
 	cd $BASE
 	if [ -d $ANT_HOME ];then echo "FOUND ANT_HOME:$ANT_HOME"
@@ -131,7 +133,8 @@ download_axis_jar(){
 	then echo ""
 	else
 		#wget https://www.i2b2.org/software/projects/installer/$AXIS_FILE
-		wget https://www.dropbox.com/s/9c0gjqbwssubd76/axis2-1.6.2-war.zip
+		#wget https://www.dropbox.com/s/9c0gjqbwssubd76/axis2-1.6.2-war.zip
+		wget https://archive.apache.org/dist/axis/axis2/java/core/1.6.2/axis2-1.6.2-war.zip
 	fi
 
 	if [ -d $BASE/packages/$AXIS_FILE ]; then echo "found axis dir";
@@ -152,7 +155,8 @@ download_wildfly(){
 	then echo "FOUND $JBOSS_FILE"
 	else
 		#wget http://download.jboss.org/wildfly/9.0.1.Final/wildfly-9.0.1.Final.tar.gz
-		wget https://www.dropbox.com/s/187wgnwnmglt2wd/wildfly-9.0.1.Final.zip
+		#wget https://www.dropbox.com/s/187wgnwnmglt2wd/wildfly-9.0.1.Final.zip
+		wget https://download.jboss.org/wildfly/9.0.1.Final/wildfly-9.0.1.Final.zip
 	fi
 	cd $BASE_CORE
 }
