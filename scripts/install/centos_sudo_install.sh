@@ -22,8 +22,10 @@ install_postgres(){
 		sudo chkconfig postgresql-9.4 on
 		sudo cp conf/postgresql/pg_hba.conf  /var/lib/pgsql/9.4/data/
 		sudo service postgresql-9.4 start
-
 	fi
+	sudo wget https://repo1.maven.org/maven2/org/postgresql/postgresql/9.2-1002-jdbc4/postgresql-9.2-1002-jdbc4.jar
+	sudo mv postgresql-9.2-1002-jdbc4.jar $BASE/local/
+
 }
 
 install_httpd(){
